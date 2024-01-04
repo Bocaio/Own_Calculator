@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOCAKI_Calculator</title>
+    <link rel="icon" href="https://play-lh.googleusercontent.com/l98O-OFKGbXcMBlh2p0GiNPYdNuqdhRDFn4ghFSUgzTkaMwuSTfsJ4j5YRuYo9HAJXpx">
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="bg-[#FF9800]">
+    <main class="flex flex-col items-center justify-between h-screen pt-4">
+        <h1 class="text-3xl md:text-4xl font-bold">BOCAKI CALCULATOR</h1>
+        <div class="flex-grow flex-col justify-center flex items-center">
+            <div class="w-full px-0 flex justify-end items-end h-20 bg-black rounded-t-xl">
+                <p type="text" name="" id="inputID" class="p-0 text-2xl pr-6 pb-2 text-white"></p>
+            </div>            
+            <div class="grid grid-cols-4 grid-rows-4 gap-[4px] bg-black pb-3 rounded-b-xl px-3">
+                <button class="text-3xl active:scale-90 text-black bg-[#B0A695] rounded-full h-12 w-12   font-bold" onclick="gettingInput('C')" tabindex="-1">C</button>
+                <button class="text-3xl active:scale-90 text-black bg-[#B0A695] rounded-full h-12 w-12  " onclick="gettingInput('remove')" tabindex="-1"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="text-3xl active:scale-90 text-black bg-[#B0A695] rounded-full h-12 w-12  " onclick="gettingInput('%')" tabindex="-1"><i class="fa-solid fa-percent"></i></button>
+                <button class="text-3xl active:scale-90 text-white bg-[#FAC213] rounded-full h-12 w-12  " onclick="gettingInput('/')" tabindex="-1"><i class="fa-solid fa-divide"></i></button>
+                <button class="text-3xl active:scale-90 text-white bg-[#445069] rounded-full h-12 w-12  " onclick="gettingInput('7')" tabindex="-1">7</button>
+                <button class="text-3xl active:scale-90 text-white bg-[#445069] rounded-full h-12 w-12  " onclick="gettingInput('8')" tabindex="-1">8</button>
+                <button class="text-3xl active:scale-90 text-white bg-[#445069] rounded-full h-12 w-12  " onclick="gettingInput('9')" tabindex="-1">9</button>
+                <button class="text-3xl active:scale-90 text-white bg-[#FAC213] rounded-full h-12 w-12  " onclick="gettingInput('*')" tabindex="-1"><i class="fa-solid fa-xmark" tabindex="-1"></i></button>
+                <button class="text-3xl active:scale-90 text-white bg-[#445069] rounded-full h-12 w-12  " onclick="gettingInput('4')" tabindex="-1">4</button>
+                <button class="text-3xl active:scale-90 text-white bg-[#445069] rounded-full h-12 w-12  " onclick="gettingInput('5')" tabindex="-1">5</button>
+                <button class="text-3xl active:scale-90  text-white bg-[#445069] rounded-full h-12 w-12  " onclick="gettingInput('6')" tabindex="-1">6</button>
+                <button class="text-3xl active:scale-90 text-white bg-[#FAC213] rounded-full h-12 w-12  " onclick="gettingInput('-')" tabindex="-1"><i class="fa-solid fa-minus" tabindex="-1"></i></button>
+                <button class="text-3xl active:scale-90 text-white bg-[#445069] rounded-full h-12 w-12  " onclick="gettingInput('3')" tabindex="-1">3</button>
+                <button class="text-3xl active:scale-90 text-white bg-[#445069] rounded-full h-12 w-12  " onclick="gettingInput('2')" tabindex="-1">2</button>
+                <button class="text-3xl active:scale-90 text-white bg-[#445069] rounded-full h-12 w-12  " onclick="gettingInput('1')" tabindex="-1">1</button>
+                <button class="text-3xl active:scale-90 text-white bg-[#FAC213] rounded-full h-12 w-12  " onclick="gettingInput('+')" tabindex="-1"><i class="fa-solid fa-plus" tabindex="-1"></i></button>
+                <button class="text-3xl active:scale-90 col-span-2 text-white bg-[#445069] rounded-full h-12 w-full  " onclick="gettingInput('0')" tabindex="-1">0</button>
+                <button class="text-3xl active:scale-90 text-white bg-[#445069] rounded-full h-12 w-12  " onclick="gettingInput('.')" tabindex="-1">.</button>
+                <button class="text-3xl active:scale-90 text-white bg-[#FAC213] rounded-full h-12 w-12  " onclick="gettingInput('=')" tabindex="-1"><i class="fa-solid fa-equals" tabindex="-1"></i></button>
+
+            </div>
+        </div>
+        <div class="text-right w-screen"><i class="fa-regular fa-copyright text-xl"></i>CopyRight__MoeYan</div>
+    </main>
+    <script src="src/app.js"></script>
+</body>
+</html>
